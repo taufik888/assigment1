@@ -1,0 +1,197 @@
+/* CSS Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+body {
+ background-color: rgb(189, 188, 188);
+ font-family: 'Signika Negative', sans-serif;
+
+}
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(67, 65, 65);
+    box-shadow: 2px 2px 2px 2px #9d9c9c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+#navigation .logo {
+    margin-left: 30px;
+}
+
+#navigation > nav > ul{
+    display: flex;
+ 
+}
+
+#navigation > nav > ul > li > a {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#navigation > nav > ul > li > a:hover{
+    transition: all 0.5s;
+    color: white !important;
+    background-color: #fca311;
+    border-radius: 10%;
+}  
+
+#navigation > button {
+    padding: 10px;
+    background-color: #fca311;
+    border-width: 0;
+    border-radius: 10%;
+    margin-right: 30px;
+}
+  
+#navigation > button:hover{
+    transition: all 0.5s;
+    transform: scale(110%);
+    cursor: pointer;
+   
+}
+  
+#navigation > button:active{
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.main-menu > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    font-size: 32px;
+    left: 0px;
+    padding: 30px 0px 50px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 10px;
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6%;
+    padding: 15px 0px 15px 0px;
+}
+
+.article1-card > img{
+    display: flex;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15px 100px 15px;
+    gap: 10px;
+}
+.bg-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 15px 20px 15px;
+    background-color: #000000;
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+    background-color: #000000;
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+
+
+#footer{
+    display: flex;
+    padding: 35px 0px;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+}
+
+#footer > p > a{
+    color: white;
+}  
+
+@media only screen and (max-width: 768px) {
+    
+    #navigation {
+        width: 375px;
+        padding: 0;
+    }
+
+    #navigation .logo {
+        width: 20%;
+    }
+
+    #navigation .main-menu {
+        
+        font-size: 10px;
+        padding: 0;
+    }
+
+    #navigation > nav > ul > li > a {
+        padding: 0;
+    }
+    
+    #footer {
+        width: 375px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .article-card {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+
+
